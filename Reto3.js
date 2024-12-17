@@ -8,17 +8,17 @@
 
 
 function imprimirFibonacci(n) {
-  let a = 0, b = 1;
-
-  console.log(a); // Imprime el primer número
-  console.log(b); // Imprime el segundo número
-
-  for (let i = 2; i < n; i++) {
-    let siguiente = a + b;
-    console.log(siguiente);
-    a = b;
-    b = siguiente;
+    let a = 0, b = 1;
+  
+    console.log(a); // Imprime el primer número
+    console.log(b); // Imprime el segundo número
+  
+    for (let i = 2; i < n; i++) {
+      let siguiente = a + b;
+      console.log(siguiente);
+      a = b;
+      b = siguiente;
+    }
   }
-}
-
-imprimirFibonacci(50);
+  
+  imprimirFibonacci(50);

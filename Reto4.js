@@ -4,8 +4,18 @@
  */
 
 const PrimeDetector = () => {
-    for (i = 0; i < 100; i++) {
-        i%2 === 0 ? true : console.log(i);
+    const isPrime = (num) => {
+        if (num < 2) return false;
+        for (let i = 2; i < num; i++) {  
+            if (num % i === 0) return false;
+        }
+        return true;
+    };
+
+    for (i = 2; i < 100; i++) {
+        if (isPrime(i)) {
+            console.log(i);
+        }
     }
 
 }
